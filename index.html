@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Pomodoro Timer</title>
   </head>
   <body>
-    <h1>pomodoro timer</h1>
-
-    <main class="timer-container">
-      <h3 class="title">Be Productive!</h3>
-
-      <div class="timer">
-        <div class="timeLeft"></div>
-        <section class="timer-button"><button>Start Timer</button></section>
-        <div class="labels"><span>Break Length</span><span>Session Length</span></div>
-        <div class="btn-container">
-          <section class="break-length">
-            <button class="breakPlus">+</button><span class="breakSpan"></span><button class="breakMinus">-</button>
-          </section>
-          <section class="session-length">
-            <button class="sessionPlus">+</button><span class="sessionSpan"></span>
-            <button class="sessionMinus">-</button>
-          </section>
-        </div>
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="20" class="timer__button">Quick 20 Seconds</button>
+        <button data-time="300" class="timer__button">5 minute break</button>
+        <button data-time="600" class="timer__button">10 Minutes</button>
+        <button data-time="1500" class="timer__button">25 Minutes</button>
+        <button data-time="2700" class="timer__button">45 Minutes</button>
+        <form action="" id="custom" name="customForm">
+          <input type="text" placeholder="specify a custom amount of time" />
+        </form>
       </div>
-    </main>
+      <div class="display">
+        <h1 class="display__time-left"></h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+
+    <div class="display__time-left">Hello</div>
     <script src="index.js"></script>
   </body>
 </html>
